@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+section.main {
+    background: url('imgs//bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.center {
+    display: flex;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.logo-menu {
+    width: 50%;
+}
+
+.itens-menu {
+    width: 50%;
+    text-align: right;
+}
+
+.itens-menu a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu a:hover {
+    border-bottom: 2px solid #fd3;
+}
+
+.itens-menu .contact-btn {
+    padding: 10px;
+    background: #0F3FD3;
+    border-radius: 10px;
+}
+
+.itens-menu .contact-btn:hover {
+    border: 0;
+}
+
+.mackup {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    display: block;
+}
+
+.mackup h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.mackup img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.redes img {
+    width: 20%;
+    height: 142px;
+}
+
+section.porque-nos {
+    padding: 40px;
+    background: #fbfcfe;
+}
+
+section.porque-nos>.center>h2 {
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.porque-nos>.center>p {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #ccc;
+}
+
+.diferenciais {
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais {
+    width: 31%;
+    box-shadow: 0px 20px 40px #2426721C;
+    margin-right: 2%;
+    padding: 10px 20px;
+}
+
+.box-diferenciais h3 {
+    font-size: 24px;
+    color: black;
+    margin: 15px 0;
+}
+
+.box-diferenciais p {
+    font-size: 13px;
+    color: #7e92ac;
+    margin-bottom: 20px;
+}
+
+section.cta {
+    background: url('imgs/BANNER.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+}
+
+section.cta h2,
+section.cta h4 {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2 {
+    font-size: 30px;
+}
+
+section.cta a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background: #ffdd33;
+    text-decoration: none;
+    color: #0f3fd3;
+}
+
+section.beneficios {
+    padding: 65px;
+}
+
+.lista-beneficios {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.lista-beneficios h1{
+    font-size: 50px;
+}
+
+.lista-beneficios p{
+    color: #7e92ac;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.lista-beneficios p span {
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.lista-beneficios p img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.lista-beneficios a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background: #255AFF;
+    text-decoration: none;
+    color: white;
+}
+
+.img-beneficios {
+    width: 50%;
+}
+
+.img-beneficios img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+
+    .lista-beneficios,
+    .img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .diferenciais {
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .redes>.center {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+}
