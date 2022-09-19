@@ -42,6 +42,7 @@ section.main {
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
+    border-bottom: 2px solid transparent;
 }
 
 .itens-menu a:hover {
@@ -203,7 +204,205 @@ section.beneficios {
     max-width: 100%;
 }
 
+.depoimentos{
+    padding: 0 100px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.depoimentos h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.depoimentos .slides{
+   margin: 40px auto;
+}
+
+.depoimentos .cards{
+    overflow: hidden;
+}
+
+.depoimentos .card-depoimento{
+    float: left;
+}
+
+.depoimentos .cards{
+    background: #FBFCFE;
+}
+
+.depoimentos .card-depoimento{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #7E92AC;
+    box-shadow:0 0 10px #2426721c;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.card-depoimento .person{
+    width: 86px;
+    height: 86px;
+    margin-bottom: 10px;
+}
+
+.card-depoimento h5{
+    font-size: 30px;
+    color: #000;
+}
+
+.card-depoimento p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-depoimento span{
+    font-size: 18px;
+    margin:10px 0;
+    display: block;
+}
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #255AFF;
+	border-width: 0;
+	background: #255AFF;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
+.contato{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato form{
+    width: 100%;
+}
+
+.contato h1{
+    font-size: 50px;
+}
+
+.contato input[type=text],
+.contato input[type=email],
+.contato button{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #fcfdff;
+    border: 1px solid #c3cce8;
+    padding-left: 10px;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #fcfdff;
+    border: 1px solid #c3cce8;
+    padding: 10px;
+    resize: vertical;
+}
+
+.contato button{
+    background: #255AFF;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer ;
+}
+
+footer{
+    background: #255AFF;
+    color:white;
+    padding:10px 0;
+}
+
+.text-footer{
+    width: 50%;
+    padding: 8px 0;
+}
+
+.menu-mobile-icon{
+    background: red;
+    position: absolute;
+    top: 84px;
+    right: 40px;
+    width: 26px;
+    height: 22px;
+    background: url('imgs/menu-mobile.svg') no-repeat;
+    cursor: pointer;
+    display: none;
+    transition: background 1s;
+}
+
+#menu-mobile-check:checked + .menu-mobile-icon{
+    background: url('imgs/menu-close.svg') no-repeat;
+}
+
+
+
 @media screen and (max-width: 850px) {
+
+    .menu-mobile-icon{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    section.main .itens-menu{
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+        background: #255AFF;
+        padding: 10px 0 50px 0;
+    }
+
+    section.main .itens-menu a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+        margin: 20px;
+    }
+
+    #menu-mobile-check:checked ~ .itens-menu{
+        display: block;
+    }
 
     .lista-beneficios,
     .img-beneficios{
@@ -228,6 +427,23 @@ section.beneficios {
 
     .redes img {
         max-width: 300px;
+        width: 100%;
+    }
+
+    footer .itens-menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .itens-menu a{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-footer{
+        padding: 8px 0;
+        text-align: center;
         width: 100%;
     }
 
